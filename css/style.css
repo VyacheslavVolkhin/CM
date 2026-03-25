@@ -2220,6 +2220,7 @@ input.form-input-select {
   padding-right: 48px;
   background-image: url(../img/icons/arrow-select.svg);
   background-position: right 20px center;
+  background-size: 24px auto;
   background-color: #fff;
   background-repeat: no-repeat;
   -moz-appearance: none;
