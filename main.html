@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/choices.min.css" />
+        <link rel="stylesheet" href="./css/fancybox.css" />
+        <link rel="stylesheet" href="./css/flatpickr.min.css" />
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+        <script src="./js/flatpickr.js" defer></script>
+        <script src="./js/ru.js" defer></script>
+        <script src="./js/choices.min.js" defer></script>
+        <script src="./js/swiper-bundle.min.js" defer></script>
+        <script src="./js/inputmask.min.js" defer></script>
+        <script src="./js/fancybox.umd.js" defer></script>
+        <script src="./js/scripts.js" defer></script>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            <!-- header -->
+            <header class="header">
+                <div class="inner-wrap">
+                    <div class="logo-inner-wrap">
+                        <a href="" class="logo">
+                            <img
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%20350%2031'%3e%3cpath%20fill='%230e43f0'%20d='M15.119%2031q-4.748%200-8.122-1.919t-5.206-5.373Q0%2020.212%200%2015.478q0-4.733%201.791-8.186%201.833-3.455%205.206-5.373Q10.372-.001%2015.12%200q2.916%200%205.581.938t4.373%202.559L23.074%208.74q-1.875-1.493-3.79-2.174a10.9%2010.9%200%200%200-3.957-.725q-4.165%200-6.33%202.516-2.166%202.473-2.166%207.12%200%204.65%202.165%207.164%202.166%202.517%206.331%202.516%202.082%200%203.957-.682%201.915-.724%203.79-2.217l2%205.244q-1.71%201.62-4.374%202.559a16.7%2016.7%200%200%201-5.581.938'/%3e%3cpath%20fill='%231e1e1e'%20d='M29.347%2020.596v-2.857H41.01v2.857zM47.041%2030.53V.47h5.373l10.621%2019.786h-1.416L72.198.468h5.29v30.062h-5.873V10.575h.916l-8.496%2015.436H60.41l-8.538-15.479h1v19.999zM97.062%2031q-3.249%200-5.956-1.109a13.1%2013.1%200%200%201-4.581-3.155q-1.916-2.048-2.958-4.904-1-2.856-1-6.353%200-3.54%201-6.354%201.042-2.857%202.958-4.86a13.1%2013.1%200%200%201%204.581-3.156Q93.813-.001%2097.062%200q3.29%200%205.956%201.109t4.581%203.112%202.958%204.862q1.041%202.856%201.041%206.353%200%203.54-1.041%206.396-1.042%202.858-2.958%204.904a13.1%2013.1%200%200%201-4.581%203.155q-2.665%201.11-5.956%201.109m0-5.629q2.499%200%204.207-1.15%201.707-1.195%202.624-3.412.958-2.26.958-5.33%200-3.113-.917-5.33-.916-2.218-2.665-3.37-1.75-1.15-4.207-1.15-2.415%200-4.165%201.15-1.75%201.152-2.666%203.37t-.916%205.33q0%203.07.916%205.33.917%202.217%202.666%203.411%201.749%201.151%204.165%201.151M116.592%2030.53V.47h6.455v12.068h13.662V.469h6.455v30.062h-6.455V18.037h-13.662v12.494zM149.09%2030.53V.47h5.998v20.596h-1L169.748.469h4.79v30.062h-5.997V9.893h.957l-15.66%2020.638zM187.447%2030.53V5.928h-9.705V.47h25.865v5.458h-9.705v24.604zM218.921%2031q-3.249%200-5.956-1.109a13.1%2013.1%200%200%201-4.582-3.155q-1.916-2.048-2.957-4.904-.999-2.856-.999-6.353%200-3.54.999-6.354%201.041-2.857%202.957-4.86a13.1%2013.1%200%200%201%204.582-3.156q2.707-1.11%205.956-1.109%203.29%200%205.956%201.109t4.581%203.112q1.916%202.005%202.957%204.862%201.042%202.856%201.042%206.353%200%203.54-1.042%206.396-1.041%202.858-2.957%204.904a13.1%2013.1%200%200%201-4.581%203.155q-2.666%201.11-5.956%201.109m0-5.629q2.499%200%204.206-1.15%201.708-1.195%202.624-3.412.958-2.26.958-5.33%200-3.113-.916-5.33t-2.666-3.37q-1.749-1.15-4.206-1.15-2.416%200-4.165%201.15-1.75%201.152-2.666%203.37t-.916%205.33q0%203.07.916%205.33.917%202.217%202.666%203.411%201.749%201.151%204.165%201.151M238.45%2030.53V.47h13.412q3.29%200%205.581%201.151%202.29%201.152%203.457%203.284%201.208%202.13%201.208%205.16%200%203.027-1.208%205.201-1.167%202.133-3.457%203.284t-5.581%201.151h-6.956v10.83zm6.456-15.947h5.873q2.499%200%203.79-1.151%201.333-1.151%201.333-3.369t-1.333-3.326q-1.291-1.108-3.79-1.108h-5.873zM266.108%2030.53V.47h5.998v20.596h-.999L286.767.469h4.79v30.062h-5.998V9.893h.958l-15.66%2020.638zM297.468%2030.53V.47h6.456v12.068h13.661V.469h6.456v30.062h-6.456V18.037h-13.661v12.494zM329.966%2030.53V.47H350v5.458h-13.578v24.604z'/%3e%3c/svg%3e"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <div class="actions-inner-wrap">
+                        <div class="action-wrap">
+                            <div class="btn-action">
+                                <div class="button-ico">
+                                    <img
+                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%2013.75c-2.906%200-5.49%201.403-7.135%203.58-.354.47-.532.703-.526%201.02.005.245.158.553.35.704.25.196.595.196%201.286.196h12.05c.69%200%201.036%200%201.285-.195.193-.152.346-.46.35-.705.006-.317-.17-.55-.525-1.02-1.645-2.177-4.23-3.58-7.135-3.58M11%2011a4.125%204.125%200%201%200%200-8.25A4.125%204.125%200%200%200%2011%2011'/%3e%3c/svg%3e"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="button-title">
+                                    <a href="" class="link-title">Николай,</a>
+                                    <a href="" class="link-main">выйти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- /header -->
+            <!-- page -->
+            <div class="page-full">
+                <!--content-outer-wrap-->
+                <div class="content-outer-wrap">
+                    <!--content-wrap-->
+                    <div class="content-wrap">
+                        <!--filter-box-->
+                        <div class="filter-box">
+                            <div class="frm-row">
+                                <div class="frm-field field-select">
+                                    <div class="field-title">Локация</div>
+                                    <div class="frm-field-input">
+                                        <select class="form-input" required>
+                                            <option disabled hidden value="">Выбрать</option>
+                                            <!--placeholder-->
+                                            <option>Кран4 - к1</option>
+                                            <option selected>Кран4 - к1</option>
+                                            <option>Кран4 - к1</option>
+                                            <option>Кран4 - к1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="frm-field field-select">
+                                    <div class="field-title">Кран</div>
+                                    <div class="frm-field-input">
+                                        <select class="form-input" required>
+                                            <option disabled hidden value="">Выбрать</option>
+                                            <!--placeholder-->
+                                            <option>Кран4 - к1</option>
+                                            <option selected>Кран4 - к1</option>
+                                            <option>Кран4 - к1</option>
+                                            <option>Кран4 - к1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="frm-field field-date-range">
+                                    <div class="frm-field">
+                                        <div class="field-title">Начало периода</div>
+                                        <div class="frm-field-input field-date">
+                                            <input
+                                                type="text"
+                                                class="form-input"
+                                                placeholder="Paceholder"
+                                                value="17.02.2026,  00:00"
+                                            />
+                                            <a href="" class="button-field btn-action-ico ico-calendar"></a>
+                                        </div>
+                                    </div>
+                                    <div class="frm-field">
+                                        <div class="field-title">Конец периода</div>
+                                        <div class="frm-field-input field-date">
+                                            <input
+                                                type="text"
+                                                class="form-input"
+                                                placeholder="Paceholder"
+                                                value="17.02.2026,  00:00"
+                                            />
+                                            <a href="" class="button-field btn-action-ico ico-calendar"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frm-field field-submit">
+                                    <button type="submit" class="btn">
+                                        <div class="button-title">Применить</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/filter-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h1-title section-title">Русановка (Новый), Кран4 - к1</h2>
+                            <p>
+                                Модель крана:
+                                <b>КБ-473</b>
+                            </p>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--tabs-box-->
+                        <div class="tabs-box js-tabs-nav">
+                            <ul class="menu">
+                                <li>
+                                    <a
+                                        href=""
+                                        class="btn button-medium button-border button-light active"
+                                        data-tab="maintab01"
+                                    >
+                                        <div class="button-title">Дневная смена</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="btn button-medium button-border button-light"
+                                        data-tab="maintab02"
+                                    >
+                                        <div class="button-title">Ночная смена</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/tabs-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Потребление элетроэнергии, Вт</h2>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--widget-box-->
+                        <div class="widget-box js-tab-block" data-tab="maintab01">
+                            <img src="./img/w01.svg" alt="" style="display: block; width: 100%" />
+                        </div>
+                        <!--/widget-box-->
+
+                        <!--widget-box-->
+                        <div class="widget-box js-tab-block" data-tab="maintab02">
+                            <img src="./img/w01.svg" alt="" style="display: block; width: 100%" />
+                        </div>
+                        <!--/widget-box-->
+
+                        <!--content-box-->
+                        <div class="content-box">
+                            <div class="tiles-box">
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel panel-bg-white elm-panel-info">
+                                            <div class="panel-value-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='m7.333%207.333-3.58%204.297c-.32.384-.48.576-.483.738-.002.14.06.275.17.364.127.101.376.101.876.101H11l-.917%207.334%204.584-5.5m-.321-5.5h3.338c.5%200%20.75%200%20.875.101.11.089.173.223.17.364-.002.162-.162.354-.481.737l-1.244%201.492M9.692%204.503l2.225-2.67-.55%204.398M19.25%2019.25%202.75%202.75'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="elm-value text-alert">
+                                                    <span class="value-title">10</span>
+                                                    ч
+                                                    <span class="value-title">44</span>
+                                                    м
+                                                </div>
+                                            </div>
+                                            <div class="panel-sacale-wrap">
+                                                <div class="elm-scale text-alert" data-value="85"></div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="panel-title">Время простоя крана</div>
+                                                <div class="panel-info">Кран не работает или выключен</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel panel-bg-white elm-panel-info">
+                                            <div class="panel-value-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='m11.917%201.833-8.165%209.798c-.32.383-.48.575-.482.737-.002.14.061.275.17.364.127.101.376.101.876.101H11l-.917%207.334%208.165-9.798c.32-.383.48-.575.482-.737a.46.46%200%200%200-.17-.364c-.127-.101-.376-.101-.876-.101H11z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="elm-value text-att">
+                                                    <span class="value-title">1</span>
+                                                    ч
+                                                    <span class="value-title">16</span>
+                                                    м
+                                                </div>
+                                            </div>
+                                            <div class="panel-sacale-wrap">
+                                                <div class="elm-scale text-att" data-value="20"></div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="panel-title">Время работы и ожидания</div>
+                                                <div class="panel-info">Кран включён и выполняет работу</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel panel-bg-white elm-panel-info">
+                                            <div class="panel-value-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M19.443%2014.566A9.168%209.168%200%201%201%207.333%202.594M19.47%207.492c.367.886.592%201.823.669%202.776.018.235.028.353-.019.459a.5.5%200%200%201-.201.218c-.102.055-.23.055-.484.055h-7.7c-.257%200-.385%200-.483-.05a.46.46%200%200%201-.2-.2c-.05-.098-.05-.227-.05-.483v-7.7c0-.255%200-.382.054-.484a.5.5%200%200%201%20.219-.202c.106-.047.224-.037.459-.018a9.17%209.17%200%200%201%207.736%205.63'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="elm-value">
+                                                    <span class="value-title">3.46</span>
+                                                    %
+                                                </div>
+                                            </div>
+                                            <div class="panel-sacale-wrap">
+                                                <div class="elm-scale" data-value="20"></div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="panel-title">Фактическая загрузка крана</div>
+                                                <div class="panel-info">Доля активного времени к общему времени</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel panel-bg-white elm-panel-info">
+                                            <div class="panel-value-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M19.443%2014.566A9.168%209.168%200%201%201%207.333%202.594M19.47%207.492c.367.886.592%201.823.669%202.776.018.235.028.353-.019.459a.5.5%200%200%201-.201.218c-.102.055-.23.055-.484.055h-7.7c-.257%200-.385%200-.483-.05a.46.46%200%200%201-.2-.2c-.05-.098-.05-.227-.05-.483v-7.7c0-.255%200-.382.054-.484a.5.5%200%200%201%20.219-.202c.106-.047.224-.037.459-.018a9.17%209.17%200%200%201%207.736%205.63'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="elm-value">
+                                                    <span class="value-title">12</span>
+                                                    ч
+                                                    <span class="value-title">00</span>
+                                                    м
+                                                </div>
+                                            </div>
+                                            <div class="panel-sacale-wrap">
+                                                <div class="elm-scale" data-value="100"></div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="panel-title">Всё время</div>
+                                                <div class="panel-info">Общее время работы, простоя и ожидания</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/content-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Режим работы крана</h2>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--table-box-->
+                        <div class="table-box">
+                            <div class="tbl-inner-wrap">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Начало периода</th>
+                                            <th>Конец периода</th>
+                                            <th>Режим работы</th>
+                                            <th>Поднимаемый вес, т</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.02.2026, 09:45</td>
+                                            <td>17.02.2026, 10:45</td>
+                                            <td>Подъём груза</td>
+                                            <td>0,545</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--page-actions-box-->
+                            <div class="page-actions-box">
+                                <div class="pages-inner-wrap">
+                                    <a href="" class="btn-page button-disabled">Предыдущая</a>
+                                    <div class="pages-wrap">
+                                        <a href="" class="btn-page active">1</a>
+                                        <a href="" class="btn-page">2</a>
+                                        <a href="" class="btn-page">3</a>
+                                        <a href="" class="btn-page">4</a>
+                                        <a href="" class="btn-page">5</a>
+                                        <a href="" class="btn-page">...</a>
+                                        <a href="" class="btn-page">10</a>
+                                        <a href="" class="btn-page">11</a>
+                                        <a href="" class="btn-page">12</a>
+                                    </div>
+                                    <a href="" class="btn-page">Следующая</a>
+                                </div>
+                                <div class="view-inner-wrap">
+                                    <div class="action-title">На странице:</div>
+                                    <div class="action-field">
+                                        <select class="form-input">
+                                            <option selected>10</option>
+                                            <option>25</option>
+                                            <option>50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/page-actions-box-->
+                        </div>
+                        <!--/table-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Погодные условия на локации</h2>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--tiles-box-->
+                        <div class="tiles-box">
+                            <div class="slider-inner-wrap slider-tiles">
+                                <div class="slider-wrap swiper">
+                                    <div class="slider swiper-wrapper">
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">16</div>
+                                                <div class="panel-info">18, Вт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M23.75%2019.68A5.627%205.627%200%200%200%2022.4%208.774a7.502%207.502%200%200%200-14.8%200A5.626%205.626%200%200%200%206.25%2019.68m10-7.18-5%207.5h7.5l-5%207.5'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">13</div>
+                                                <div class="panel-info">19, Ср</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M13.125%201.875v2M4.5%2012.5h-2m4.314-6.31L5.4%204.774m14.037%201.414%201.415-1.414M23.75%2012.5h-2m-13.625%200a5%205%200%200%201%209.375-2.422M7.5%2027.5a5%205%200%201%201%201.656-9.72%206.252%206.252%200%200%201%2011.689%200A5%205%200%201%201%2022.5%2027.5z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">17</div>
+                                                <div class="panel-info">20, Чт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M15%202.5V5m0%2020v2.5M5%2015H2.5m5.393-7.107L6.125%206.125m15.982%201.768%201.768-1.768M7.893%2022.113%206.125%2023.88m15.982-1.767%201.768%201.767M27.5%2015H25m-3.75%200a6.25%206.25%200%201%201-12.5%200%206.25%206.25%200%200%201%2012.5%200'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">15</div>
+                                                <div class="panel-info">21, Пт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='m20%2023.125-1.25%203.125M10%2023.125%208.75%2026.25M15%2023.125l-1.25%203.125m-5-7.5a6.25%206.25%200%201%201%20.124-12.499%206.878%206.878%200%200%201%2012.744%201.255q.127-.006.257-.006a5.625%205.625%200%200%201%200%2011.25z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">18</div>
+                                                <div class="panel-info">22, Сб</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M13.125%201.875v2M4.5%2012.5h-2m4.314-6.31L5.4%204.774m14.037%201.414%201.415-1.414M23.75%2012.5h-2m-13.625%200a5%205%200%200%201%209.375-2.422M7.5%2027.5a5%205%200%201%201%201.656-9.72%206.252%206.252%200%200%201%2011.689%200A5%205%200%201%201%2022.5%2027.5z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">18</div>
+                                                <div class="panel-info">23, Вс</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M13.125%201.875v2M4.5%2012.5h-2m4.314-6.31L5.4%204.774m14.037%201.414%201.415-1.414M23.75%2012.5h-2m-13.625%200a5%205%200%200%201%209.375-2.422M7.5%2027.5a5%205%200%201%201%201.656-9.72%206.252%206.252%200%200%201%2011.689%200A5%205%200%201%201%2022.5%2027.5z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">14</div>
+                                                <div class="panel-info">24, Пн</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img src="/img/icons/snow.svg" alt="" />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">3</div>
+                                                <div class="panel-info">25, Вт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M15%202.5V5m0%2020v2.5M5%2015H2.5m5.393-7.107L6.125%206.125m15.982%201.768%201.768-1.768M7.893%2022.113%206.125%2023.88m15.982-1.767%201.768%201.767M27.5%2015H25m-3.75%200a6.25%206.25%200%201%201-12.5%200%206.25%206.25%200%200%201%2012.5%200'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">11</div>
+                                                <div class="panel-info">26, Ср</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M25%2019.053a5.626%205.626%200%200%200-2.6-10.279%207.502%207.502%200%200%200-14.8%200A5.626%205.626%200%200%200%205%2019.053m5%203.447V25m0-10v2.5m10%205V25m0-10v2.5M15%2025v2.5m0-10V20'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">10</div>
+                                                <div class="panel-info">27, Чт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M15%202.5V5m0%2020v2.5M5%2015H2.5m5.393-7.107L6.125%206.125m15.982%201.768%201.768-1.768M7.893%2022.113%206.125%2023.88m15.982-1.767%201.768%201.767M27.5%2015H25m-3.75%200a6.25%206.25%200%201%201-12.5%200%206.25%206.25%200%200%201%2012.5%200'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">12</div>
+                                                <div class="panel-info">28, Пт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <div class="elm-panel elm-panel-weather">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M15%202.5V5m0%2020v2.5M5%2015H2.5m5.393-7.107L6.125%206.125m15.982%201.768%201.768-1.768M7.893%2022.113%206.125%2023.88m15.982-1.767%201.768%201.767M27.5%2015H25m-3.75%200a6.25%206.25%200%201%201-12.5%200%206.25%206.25%200%200%201%2012.5%200'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value" data-unit="°">12</div>
+                                                <div class="panel-info">28, Пт</div>
+                                            </div>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                ></div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                ></div>
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+
+                        <!--content-box-->
+                        <div class="content-box">
+                            <!--tiles-box-->
+                            <div class="tiles-box">
+                                <div class="items-wrap col-6">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Скорость ветра</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.717%204.278a1.833%201.833%200%201%201%201.367%203.056h-8.25m9.633%2010.388a1.833%201.833%200%201%200%201.367-3.056h-11m13.533-8.25A2.75%202.75%200%201%201%2017.417%2011H1.833'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">6 м/с</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Влажность</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11.513%205.573a10%2010%200%200%200%201.32-3.281c.459%202.291%201.834%204.491%203.667%205.958s2.75%203.208%202.75%205.042a6.399%206.399%200%200%201-10.917%204.556m-1.916-3.383c2.016%200%203.666-1.677%203.666-3.712%200-1.064-.522-2.072-1.567-2.925s-1.833-2.117-2.1-3.446a6.04%206.04%200%200%201-2.099%203.446c-1.054.844-1.567%201.87-1.567%202.925%200%202.035%201.65%203.712%203.667%203.712'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">64%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Видимость</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M2.218%2011.654c-.124-.198-.187-.297-.222-.45a1.1%201.1%200%200%201%200-.409c.035-.152.098-.251.222-.449C3.25%208.713%206.321%204.583%2011%204.583s7.75%204.13%208.782%205.763c.125.198.188.297.223.45.026.114.026.294%200%20.409-.035.152-.098.251-.223.449-1.031%201.633-4.102%205.763-8.782%205.763s-7.75-4.13-8.782-5.763'/%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%2013.75a2.75%202.75%200%201%200%200-5.5%202.75%202.75%200%200%200%200%205.5'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">15 км</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Давление</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M19.25%202.75h-5.5m5.5%203.667h-5.5m5.5%203.666h-5.5m-8.708%202.528V4.125a2.292%202.292%200%201%201%204.583%200v8.486a4.125%204.125%200%201%201-4.583%200m3.208%203.43a.917.917%200%201%201-1.834%200%20.917.917%200%200%201%201.834%200'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">1015 hPa</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">УФ индекс</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%201.833v1.834m0%2014.666v1.834M3.667%2011H1.833m3.955-5.212L4.492%204.492m11.72%201.296%201.296-1.296M5.788%2016.215l-1.296%201.296m11.72-1.296%201.296%201.296M20.167%2011h-1.834m-2.75%200a4.583%204.583%200%201%201-9.167%200%204.583%204.583%200%200%201%209.167%200'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">2 UV</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Точка росы</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%2019.708a6.417%206.417%200%200%200%206.417-6.416c0-1.834-.917-3.575-2.75-5.042C12.833%206.783%2011.458%204.583%2011%202.292c-.458%202.291-1.833%204.491-3.667%205.958s-2.75%203.208-2.75%205.042A6.416%206.416%200%200%200%2011%2019.708'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">8 0С</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <!--/tiles-box-->
+
+                            <!--title-box-->
+                            <div class="title-box no-mbottom">
+                                <h2 class="h3-title section-title">Скорость ветра, м/с</h2>
+                            </div>
+                            <!--/title-box-->
+
+                            <!--widget-box-->
+                            <div class="widget-box mb-title">
+                                <img src="./img/w02.svg" alt="" style="display: block; width: 100%" />
+                            </div>
+                            <!--/widget-box-->
+
+                            <!--tiles-box-->
+                            <div class="tiles-box">
+                                <div class="slider-inner-wrap slider-tiles">
+                                    <div class="slider-wrap swiper">
+                                        <div class="slider swiper-wrapper">
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">14</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">14:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">13</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">15:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">12</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">16:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">12</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">17:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">11</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">18:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">10</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">19:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">9</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">20:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">8</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">21:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">8</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">22:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">8</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">23:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <div class="elm-panel elm-panel-weather-small">
+                                                    <div class="panel-value" data-unit="°">7</div>
+                                                    <div class="elm-ico">
+                                                        <img
+                                                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2030%2030'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.125%2023.75A5.625%205.625%200%200%201%207.6%2012.524a7.502%207.502%200%200%201%2014.8%200%205.626%205.626%200%200%201-.525%2011.226z'/%3e%3c/svg%3e"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="panel-title">6 м/с</div>
+                                                    <div class="panel-info">24:00</div>
+                                                </div>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                    ></div>
+                                    <div
+                                        class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!--/tiles-box-->
+                        </div>
+                        <!--/content-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Зафиксированы нарушения охраны труда</h2>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--tiles-box-->
+                        <div class="tiles-box">
+                            <div class="slider-inner-wrap slider-tiles">
+                                <div class="slider-wrap swiper">
+                                    <div class="slider swiper-wrapper">
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/01.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/02.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40 - 12:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/03.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 15:54</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                ></div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                ></div>
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Фото-прогресс строительства</h2>
+                        </div>
+                        <!--/title-box-->
+
+                        <!--tabs-box-->
+                        <div class="tabs-box js-tabs-nav">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn button-medium button-border button-light" data-tab="tab01">
+                                        <div class="button-title">День</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="btn button-medium button-border button-light active"
+                                        data-tab="tab02"
+                                    >
+                                        <div class="button-title">Неделя</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn button-medium button-border button-light" data-tab="tab03">
+                                        <div class="button-title">Месяц</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/tabs-box-->
+
+                        <!--tiles-box-->
+                        <div class="tiles-box js-tab-block" data-tab="tab01">
+                            <div class="slider-inner-wrap slider-tiles">
+                                <div class="slider-wrap swiper">
+                                    <div class="slider swiper-wrapper">
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                ></div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                ></div>
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+
+                        <!--tiles-box-->
+                        <div class="tiles-box js-tab-block" data-tab="tab02">
+                            <div class="slider-inner-wrap slider-tiles">
+                                <div class="slider-wrap swiper">
+                                    <div class="slider swiper-wrapper">
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                ></div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                ></div>
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+
+                        <!--tiles-box-->
+                        <div class="tiles-box js-tab-block" data-tab="tab03">
+                            <div class="slider-inner-wrap slider-tiles">
+                                <div class="slider-wrap swiper">
+                                    <div class="slider swiper-wrapper">
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover photo-play">
+                                                        <img src="./img/04.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">16.04.2026 - 18.04.2026, 11:26 - 12:26</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/05.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                        <!--sl-wrap-->
+                                        <div class="sl-wrap swiper-slide">
+                                            <a href="" class="item-tile-main">
+                                                <div class="tile-photo-wrap">
+                                                    <div class="elm-photo photo-cover">
+                                                        <img src="./img/06.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title">18.04.2026, 11:40</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--/sl-wrap-->
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-prev button-slider button-slider-prev button-slider-tiles-prev"
+                                ></div>
+                                <div
+                                    class="btn-action-ico ico-arrow ico-arrow-next button-slider button-slider-next button-slider-tiles-next"
+                                ></div>
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Зафиксированы нарушения охраны труда</h2>
+                        </div>
+                        <!--/title-box-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <div class="elm-info">Нарушения не зафиксированы</div>
+                        </div>
+                        <!--/info-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Фото-прогресс строительства</h2>
+                        </div>
+                        <!--/title-box-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <div class="elm-info">Фото прогресса отсутствуют</div>
+                        </div>
+                        <!--/info-box-->
+                    </div>
+                    <!--/content-wrap-->
+
+                    <!--side-wrap-->
+                    <div class="side-wrap">
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Подробная информация по крану</h2>
+                        </div>
+                        <!--/title-box-->
+                        <!--content-box-->
+                        <div class="content-box">
+                            <div class="title-box">
+                                <h3 class="h3-title section-title">Работа / простой крана</h3>
+                            </div>
+                            <div class="tiles-box">
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel-chart">
+                                            <div class="elm-donut-chart">
+                                                <svg
+                                                    width="230"
+                                                    height="230"
+                                                    viewBox="0 0 230 230"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M119.369 0.0830226C139.667 0.854729 159.398 6.98897 176.556 17.8617C193.714 28.7345 207.686 43.9578 217.05 61.9831L201.328 70.1511C193.406 54.9029 181.587 42.0249 167.073 32.8273C152.558 23.6296 135.867 18.4405 118.696 17.7876L119.369 0.0830226Z"
+                                                        fill="#0E43F0"
+                                                    ></path>
+                                                    <path
+                                                        d="M218.747 65.3867C229.502 87.8762 232.658 113.251 227.739 137.69C222.821 162.129 210.094 184.308 191.477 200.886C172.859 217.464 149.359 227.543 124.515 229.606C99.6721 231.668 74.8313 225.603 53.7346 212.322C32.638 199.041 16.428 179.265 7.54637 155.972C-1.33524 132.679 -2.40751 107.131 4.49109 83.1758C11.3897 59.2206 25.8855 38.1556 45.7952 23.154C65.7048 8.15231 89.95 0.0263413 114.879 6.38898e-05L114.897 17.7175C93.8093 17.7397 73.2995 24.6137 56.4572 37.3042C39.6149 49.9946 27.3524 67.8142 21.5166 88.0788C15.6808 108.343 16.5879 129.955 24.1012 149.66C31.6144 169.364 45.327 186.094 63.1734 197.328C81.0198 208.563 102.034 213.694 123.049 211.949C144.065 210.204 163.945 201.678 179.694 187.654C195.444 173.63 206.209 154.868 210.37 134.194C214.531 113.521 211.861 92.055 202.764 73.0303L218.747 65.3867Z"
+                                                        fill="#F82525"
+                                                    ></path>
+                                                </svg>
+                                                <div class="donut-chart-title">35%</div>
+                                            </div>
+                                            <div class="panel-status-wrap">
+                                                <div class="elm-status type-att">
+                                                    Работа крана:
+                                                    <b>10,5%</b>
+                                                </div>
+                                                <div class="elm-status type-alert">
+                                                    Простой крана:
+                                                    <b>64%</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/content-box-->
+
+                        <!--map-box-->
+                        <div class="map-box">
+                            <div class="map-inner-wrap">
+                                <script
+                                    type="text/javascript"
+                                    charset="utf-8"
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"
+                                ></script>
+                            </div>
+                        </div>
+                        <!--/map-box-->
+
+                        <!--content-box-->
+                        <div class="content-box">
+                            <div class="title-info-box">
+                                <p>Данные обновляются в режиме реального времени.</p>
+                                <p>
+                                    Последнее обновление:
+                                    <b class="text-base">Сегодня, 10:43</b>
+                                </p>
+                            </div>
+                            <div class="tiles-box">
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel panel-bg-white elm-panel-total">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-title">Потребление электроэнергии</div>
+                                            </div>
+                                            <div class="panel-value-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='m11.917%201.833-8.165%209.798c-.32.383-.48.575-.482.737-.002.14.061.275.17.364.127.101.376.101.876.101H11l-.917%207.334%208.165-9.798c.32-.383.48-.575.482-.737a.46.46%200%200%200-.17-.364c-.127-.101-.376-.101-.876-.101H11z'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="elm-value">
+                                                    <span class="value-title">2 660</span>
+                                                    Вт
+                                                </div>
+                                            </div>
+                                            <div class="panel-status-wrap">
+                                                <div class="elm-status type-alert">
+                                                    L3:
+                                                    <b>1 500 Вт</b>
+                                                </div>
+                                                <div class="elm-status type-succefull">
+                                                    L2:
+                                                    <b>800 Вт</b>
+                                                </div>
+                                                <div class="elm-status type-process">
+                                                    L1:
+                                                    <b>360 Вт</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/content-box-->
+
+                        <!--content-box-->
+                        <div class="content-box">
+                            <div class="title-box">
+                                <h3 class="h3-title section-title">Данные по контроллеру</h3>
+                            </div>
+                            <div class="tiles-box">
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">IP-адрес</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='m3.667%2015.583%205.5-5.5-5.5-5.5M11%2017.417h7.333'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">10.77.3.128</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Серийный номер</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M16.042%2015.583H5.958m10.084-3.666H5.958M2.75%208.25h16.5m-12.1-5.5h7.7c1.54%200%202.31%200%202.899.3a2.75%202.75%200%200%201%201.201%201.202c.3.588.3%201.358.3%202.898v7.7c0%201.54%200%202.31-.3%202.899a2.75%202.75%200%200%201-1.201%201.201c-.589.3-1.359.3-2.899.3h-7.7c-1.54%200-2.31%200-2.898-.3A2.75%202.75%200%200%201%203.05%2017.75c-.3-.589-.3-1.359-.3-2.899v-7.7c0-1.54%200-2.31.3-2.898A2.75%202.75%200%200%201%204.252%203.05c.588-.3%201.358-.3%202.898-.3'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">A67JHG90C</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Версия ПО</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%2014.667V11m0-3.667h.01M20.166%2011a9.167%209.167%200%201%201-18.334%200%209.167%209.167%200%200%201%2018.334%200'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">wb-2401</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Время работы</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%205.5V11l3.667%201.833m5.5-1.833a9.167%209.167%200%201%201-18.334%200%209.167%209.167%200%200%201%2018.334%200'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">113д 9ч 24м</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Температура CPU</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M8.25%201.833v1.834m5.5-1.834v1.834m-5.5%2014.666v1.834m5.5-1.834v1.834M18.333%208.25h1.834m-1.834%204.583h1.834M1.833%208.25h1.834m-1.834%204.583h1.834m4.4%205.5h5.866c1.54%200%202.31%200%202.899-.3a2.75%202.75%200%200%200%201.201-1.201c.3-.588.3-1.359.3-2.899V8.067c0-1.54%200-2.31-.3-2.899a2.75%202.75%200%200%200-1.201-1.202c-.588-.3-1.359-.3-2.899-.3H8.067c-1.54%200-2.31%200-2.899.3a2.75%202.75%200%200%200-1.202%201.202c-.3.588-.3%201.359-.3%202.899v5.866c0%201.54%200%202.31.3%202.899a2.75%202.75%200%200%200%201.202%201.202c.588.3%201.358.3%202.899.3m1.65-4.583h2.566c.514%200%20.77%200%20.966-.1a.9.9%200%200%200%20.401-.4c.1-.197.1-.453.1-.967V9.717c0-.514%200-.77-.1-.966a.9.9%200%200%200-.4-.401c-.197-.1-.453-.1-.967-.1H9.717c-.514%200-.77%200-.967.1a.9.9%200%200%200-.4.4c-.1.197-.1.453-.1.967v2.566c0%20.514%200%20.77.1.966a.9.9%200%200%200%20.4.401c.197.1.453.1.967.1'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h22v22H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">47 0С</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="elm-panel elm-panel-small">
+                                            <div class="panel-title-wrap">
+                                                <div class="panel-info">Температура платы</div>
+                                            </div>
+                                            <div class="panel-info-wrap">
+                                                <div class="elm-ico">
+                                                    <img
+                                                        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='-1%20-1%2024%2024'%3e%3cpath%20stroke='%230e43f0'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M11%208.25%203.725%2012.98c-.63.41-.946.614-1.055.874a.92.92%200%200%200%200%20.71M11%208.25l7.275%204.729c.63.41.946.614%201.055.874a.92.92%200%200%201%200%20.71M11%208.25V2.292m0%2011.458L3.725%209.021c-.63-.41-.946-.614-1.055-.874a.92.92%200%200%201%200-.71M11%2013.75l7.275-4.729c.63-.41.946-.614%201.055-.874a.92.92%200%200%200%200-.71M11%2013.75v5.958m8.5-5.066-7.7%205.005c-.29.188-.435.282-.59.319a.9.9%200%200%201-.42%200c-.155-.037-.3-.13-.59-.319l-7.7-5.005c-.243-.158-.365-.238-.453-.343a.9.9%200%200%201-.173-.319c-.04-.131-.04-.277-.04-.568V8.588c0-.291%200-.437.04-.568a.9.9%200%200%201%20.173-.319c.088-.105.21-.185.454-.343l7.7-5.005c.289-.188.434-.282.59-.319a.9.9%200%200%201%20.418%200c.156.037.3.13.59.319l7.7%205.005c.244.158.366.238.454.343a.9.9%200%200%201%20.173.319c.04.131.04.277.04.568v4.824c0%20.291%200%20.437-.04.568a.9.9%200%200%201-.173.319c-.088.105-.21.185-.454.343'/%3e%3c/svg%3e"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="panel-value">20.91 0С</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/content-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Видео с камеры на кране</h2>
+                        </div>
+                        <!--/title-box-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <div class="elm-info">Фото прогресса отсутствуют</div>
+                        </div>
+                        <!--/info-box-->
+
+                        <!--title-box-->
+                        <div class="title-box">
+                            <h2 class="h2-title section-title">Видео с камеры на кране</h2>
+                        </div>
+                        <!--/title-box-->
+                        <!--tiles-box-->
+                        <div class="tiles-box">
+                            <div class="items-wrap">
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <div class="item-tile-video">
+                                        <iframe
+                                            width="560"
+                                            height="315"
+                                            src="https://www.youtube.com/embed/ScMzIvxBSi4?si=aLDrLH8pKPQuTKls"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="
+                                                accelerometer;
+                                                autoplay;
+                                                clipboard-write;
+                                                encrypted-media;
+                                                gyroscope;
+                                                picture-in-picture;
+                                                web-share;
+                                            "
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                                <!--/item wrap-->
+                            </div>
+                        </div>
+                        <!--/tiles-box-->
+                    </div>
+                    <!--/side-wrap-->
+                </div>
+                <!--/content-outer-wrap-->
+            </div>
+            <!-- /page -->
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="inner-wrap">
+                    <div class="info-inner-wrap">
+                        <div class="info-wrap">С-Мониторинг, 2026</div>
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li><a href="">Политика конфиденциальности</a></li>
+                                <li><a href="">Правила платформы</a></li>
+                                <li><a href="">Помощь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /footer -->
+        </div>
+        <!-- /wrap -->
+
+        <!-- popups (всплывающие окна) -->
+    </body>
+</html>
