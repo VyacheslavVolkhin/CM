@@ -2783,8 +2783,8 @@ body .choices {
   /* dropdown search */
   /* dropdown reset */
 }
-body .choices:not(.is-open) ~ .choices__list--dropdown {
-  background: red;
+body .choices:not(.is-open) .choices__list--dropdown {
+  display: none;
 }
 body .choices.is-focused {
   z-index: 110;
